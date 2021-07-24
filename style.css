@@ -35,7 +35,7 @@ body {
 /* Navbar css */
 
 nav {
-  background: #1a5d92ab;
+  background: #522e009e;
   height: 70px;
   width: 100%;
 }
@@ -43,7 +43,7 @@ nav {
 nav > ul {
   float: right;
   margin: 30px 6vh 0 0;
-  color: #ffffff;
+  color: rgb(215,215,215);
 }
 
 nav > ul li {
@@ -60,13 +60,13 @@ nav > ul li a {
 
 ul > li > a:hover {
   /* background-color: rgba(255,255,255,0.7); */
-  color: rgb(65, 65, 65);
+  color: #ffffff;
   transition: 0.5sec;
 }
 
 ul > li > a.active {
   background-color: white;
-  color: rgb(65, 65, 65);
+  color: rgb(26 93 146);
 }
 
 label.logo {
@@ -95,7 +95,7 @@ label.logo {
   color: white;
   width: 27vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #522e006b;
   float: left;
 }
 
@@ -105,7 +105,7 @@ label.logo {
   width: 73vw;
   height: 100vh;
   overflow-y: scroll;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #522e006b;
 }
 
 /* sections */
