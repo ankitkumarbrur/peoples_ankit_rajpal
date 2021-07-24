@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  overflow: hidden;
+  background: url(bg.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* =================================== */
+/* Common css */
+
+.content {
+  color:rgb(85, 85, 85);
+  font-size: 18px;
+}
+
+.primary-color {
+  color:rgb(26, 92, 146);
+}
+
+.secondary-color {
+  color: rgb(65, 65, 65);
+}
+
+.content-background {
+  background-color: rgba(255,255,255,0.8);
+}
+
+/* =================================== */
+/* Navbar css */
+
+nav {
+  background: #1a5d92ab;
+  height: 70px;
+  width: 100%;
+}
+
+nav > ul {
+  float: right;
+  margin: 30px 6vh 0 0;
+  color: #ffffff;
+}
+
+nav > ul li {
+  display: inline;
+  cursor: pointer;
+}
+
+nav > ul li a {
+  font-size: 1rem;
+  padding: 0.6rem 0.9rem;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+}
+
+ul > li > a:hover {
+  /* background-color: rgba(255,255,255,0.7); */
+  color: rgb(65, 65, 65);
+  transition: 0.5sec;
+}
+
+ul > li > a.active {
+  background-color: white;
+  color: rgb(65, 65, 65);
+}
+
+label.logo {
+  float: left;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-left: 4vw;
+  line-height: 10vh;
+  font-weight: bold;
+}
+
+.checkbtn {
+  font-size: 1.5rem;
+  color: white;
+  float: right;
+  line-height: 10vh;
+  margin-right: 7vw;
+  cursor: pointer;
+  display: none;
+}
+
+/* ------------------------------------------------------- */
+
+.left {
+  color: white;
+  width: 27vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  float: left;
+}
+
+.right {
+  float: right;
+  color: white;
+  width: 73vw;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* sections */
+
+section {
+  width: 67vw;
+  position: relative;
+  height: auto;
+  background-color: #191919;
+  margin: 6vh auto;
+  padding: 7vh 4vw 11vh 4vw;
+  display: block;
+}
+
+section.content-wrapper {
+  height: 78vh;
+  overflow-y: auto;
+}
+
+section.intro {
+  width: 23.4vw;
+  height: 78vh;
+  margin: 6vh 0 0 6vh;
+  background-color: rgba(255,255,255,0.7);
+  padding: 7vh 2vw;
+}
+
+.profile-img {
+  display: block;
+  border-radius: 50%;
+  border: 3px solid rgba(81,81,81,1);
+  width: 12vw;
+  margin: auto;
+}
+
+h1 {
+  /* font-family: "Orbitron", cursive; */
+  font-size: 3rem;
+  /* border-bottom: 2px solid rgb(20, 157, 100); */
+}
+
+h2 {
+  /* font-family: "Orbitron", cursive; */
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+.center {
+  text-align: center;
+}
+
+#intro {
+  display: none;
+}
+
+.intro-contact {
+  line-height: 2;
+}
+
+section > li {
+  margin: 0.6rem 0 0 5vw;
+}
+
+.list-item {
+  margin: 0.6rem 0 0 5vw;
+}
+.list-link {
+  text-decoration: none;
+}
+
+.justify {
+  text-align: justify;
+  font-size: 18px;
+}
+
+section li {
+  text-align: justify;
+}
+
+/* ------------------------------------- */
+
+@media (max-width: 1280px) {
+  label.logo {
+    font-size: 1.5rem;
+    margin-left: 5vw;
+  }
+  nav > ul li a {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1180px) {
+  .left {
+    display: none;
+  }
+  #intro {
+    display: block;
+  }
+  .profile-img {
+    width: 25vw;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+    padding: 10px;
+  }
+
+  h3 {
+    font-size: 1.6rem;
+  }
+
+  .right {
+    width: 100vw;
+    overflow-y: scroll;
+  }
+  section {
+    width: 88vw;
+    margin: 6vh auto;
+    padding: 5vh 5vw;
+  }
+  .checkbtn {
+    display: block;
+  }
+
+  nav > ul {
+    position: fixed;
+    width: 40%;
+    height: 100vh;
+    background: #191919;
+    top: 10vh;
+    left: -100%;
+    text-align: left;
+    transition: all 0.5s;
+    z-index: 1000;
+  }
+  nav > ul li {
+    display: block;
+    margin: 50px 4vw;
+    line-height: 2.5rem;
+  }
+  nav > ul li a {
+    font-size: 1rem;
+  }
+  a:hover,
+  a.active {
+    background: none;
+    /* color: rgb(3, 201, 201); */
+  }
+  li > a:hover {
+    background: none;
+    transition: 0.5sec;
+  }
+}
+
+@media (max-width: 800px) {
+  section {
+    /* width: 88vw; */
+    margin: 3vh auto;
+    /* padding: 10vh auto; */
+  }
+  nav > ul {
+    width: 70%;
+  }
+  nav > ul li {
+    display: block;
+    /* margin: 50px 0; */
+    line-height: 1.8rem;
+  }
+  nav > ul li a {
+    font-size: 0.9rem;
+  }
+  /* a:hover,
+  a.active {
+    background: none;
+    color: rgb(3, 201, 201);
+  } */
+}
