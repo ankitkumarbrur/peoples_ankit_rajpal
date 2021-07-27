@@ -5,18 +5,29 @@
 }
 
 body {
-  font-family: "Quicksand", sans-serif;
-  overflow: hidden;
+  font-family: "Roboto", sans-serif, Helvetica;
+  overflow-y: hidden;
   background: url(bg.jpg) no-repeat;
   background-size: cover;
+}
+
+.footer {
+  background: transparent;
+  height: 200px;
 }
 
 /* =================================== */
 /* Common css */
 
 .content {
-  color:rgb(85, 85, 85);
+  color:rgb(41, 41, 41);
   font-size: 18px;
+}
+
+.sub-content {
+  color: rgb(65, 65, 65);
+  font-style: italic;
+  font-size: 16px;
 }
 
 .primary-color {
@@ -24,11 +35,15 @@ body {
 }
 
 .secondary-color {
-  color: rgb(65, 65, 65);
+  color:rgb(53, 53, 53);
+}
+
+.tint-color {
+  color: #d69f1d;
 }
 
 .content-background {
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,0.8);
 }
 
 /* =================================== */
@@ -36,6 +51,7 @@ body {
 
 nav {
   background: #522e009e;
+  /* background: #1a5d9259; */
   height: 70px;
   width: 100%;
 }
@@ -93,19 +109,19 @@ label.logo {
 
 .left {
   color: white;
-  width: 27vw;
-  height: 100vh;
+  width: 27%;
   background-color: #522e006b;
   float: left;
+  height: 100vh;
 }
 
 .right {
   float: right;
   color: white;
-  width: 73vw;
-  height: 100vh;
+  width: 73%;
   overflow-y: scroll;
   background-color: #522e006b;
+  height: 100vh;
 }
 
 /* sections */
@@ -116,21 +132,21 @@ section {
   height: auto;
   background-color: #191919;
   margin: 6vh auto;
-  padding: 7vh 4vw 11vh 4vw;
+  padding: 7vh 4vw 7vh 4vw;
   display: block;
 }
 
 section.content-wrapper {
   height: 78vh;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 section.intro {
   width: 23.4vw;
   height: 78vh;
   margin: 6vh 0 0 6vh;
-  background-color: rgba(255,255,255,0.7);
   padding: 7vh 2vw;
+  overflow-y : hidden;
 }
 
 .profile-img {
@@ -144,6 +160,8 @@ section.intro {
 h1 {
   /* font-family: "Orbitron", cursive; */
   font-size: 3rem;
+  
+  padding: 10px;
   /* border-bottom: 2px solid rgb(20, 157, 100); */
 }
 
@@ -155,7 +173,12 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+h4 {
+  font-size: 1rem;
   margin-top: 1rem;
 }
 
@@ -165,6 +188,7 @@ h3 {
 
 #intro {
   display: none;
+  overflow-y: hidden;
 }
 
 .intro-contact {
@@ -172,7 +196,7 @@ h3 {
 }
 
 section > li {
-  margin: 0.6rem 0 0 5vw;
+  margin: 0.5rem 2rem 0 2rem;
 }
 
 .list-item {
@@ -191,6 +215,13 @@ section li {
   text-align: justify;
 }
 
+#research a {
+  text-decoration: none;
+}
+#research a:hover {
+  text-decoration: underline;
+}
+
 /* ------------------------------------- */
 
 @media (max-width: 1280px) {
@@ -207,9 +238,22 @@ section li {
   .left {
     display: none;
   }
+  .tint-color {
+    color:rgb(41, 41, 41);
+  }
+  strong {
+    font-weight: 100;
+  }
+  
   #intro {
     display: block;
   }
+  
+  #about {
+    height: max-content;
+    margin-bottom: 6rem;
+  }
+
   .profile-img {
     width: 25vw;
   }
@@ -228,13 +272,16 @@ section li {
   }
 
   .right {
-    width: 100vw;
-    overflow-y: scroll;
+    width: 100%;
   }
   section {
     width: 88vw;
-    margin: 6vh auto;
+    margin: 5vh auto;
     padding: 5vh 5vw;
+  }
+  section.content-wrapper {
+    height: 80vh;
+    overflow-y: scroll;
   }
   .checkbtn {
     display: block;
@@ -242,11 +289,14 @@ section li {
 
   nav > ul {
     position: fixed;
-    width: 40%;
+    background: #522e00e3;
+    width: 42%;
     height: 100vh;
-    background: #191919;
-    top: 10vh;
-    left: -100%;
+    top: 70px;
+    right: -100%;
+    margin: 0;
+    min-width: 350px;
+    min-height: 540px;
     text-align: left;
     transition: all 0.5s;
     z-index: 1000;
@@ -271,13 +321,14 @@ section li {
 }
 
 @media (max-width: 800px) {
-  section {
-    /* width: 88vw; */
-    margin: 3vh auto;
-    /* padding: 10vh auto; */
-  }
   nav > ul {
     width: 70%;
+    background: #522e00e3;
+    height: 100vh;
+    right: -100%;
+    top: 70px;
+    min-width: 350px;
+    min-height: 540px;
   }
   nav > ul li {
     display: block;
