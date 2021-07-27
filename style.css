@@ -242,7 +242,7 @@ section li {
     color:rgb(41, 41, 41);
   }
   strong {
-    font-weight: 100;
+    font-weight: normal;
   }
   
   #intro {
