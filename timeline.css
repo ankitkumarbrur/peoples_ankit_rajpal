@@ -30,7 +30,7 @@ p {
   padding: 50px;
   list-style: none;
   text-align: left;
-  font-weight: 100;
+  font-weight: normal;;
   max-width: 80%;
 }
 .timeline h1,
@@ -62,7 +62,7 @@ p {
   color: rgba(65, 65, 65, 1);
   content: attr(data-date);
   text-align: right;
-  font-weight: 100;
+  font-weight: normal;
   font-size: 18px;
   min-width: 120px;
 }
