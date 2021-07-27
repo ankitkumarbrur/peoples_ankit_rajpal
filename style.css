@@ -39,7 +39,10 @@ body {
 }
 
 .tint-color {
-  color: #d69f1d;
+  color:rgb(41, 41, 41);
+}
+strong {
+  font-weight: normal;
 }
 
 .content-background {
@@ -99,7 +102,7 @@ label.logo {
   font-size: 1.5rem;
   color: white;
   float: right;
-  line-height: 10vh;
+  line-height: 70px;
   margin-right: 7vw;
   cursor: pointer;
   display: none;
@@ -214,6 +217,9 @@ section > li {
 section li {
   text-align: justify;
 }
+.timeline li {
+  text-align: left;
+}
 
 #research a {
   text-decoration: none;
@@ -238,35 +244,26 @@ section li {
   .left {
     display: none;
   }
-  .tint-color {
-    color:rgb(41, 41, 41);
-  }
-  strong {
-    font-weight: normal;
-  }
   
-  #intro {
-    display: block;
-  }
+  
   
   #about {
     height: max-content;
-    margin-bottom: 6rem;
   }
-
+  
   .profile-img {
     width: 25vw;
   }
-
+  
   h1 {
     font-size: 2rem;
   }
-
+  
   h2 {
     font-size: 2rem;
     padding: 10px;
   }
-
+  
   h3 {
     font-size: 1.6rem;
   }
@@ -280,8 +277,12 @@ section li {
     padding: 5vh 5vw;
   }
   section.content-wrapper {
-    height: 80vh;
-    overflow-y: scroll;
+    height: max-content;
+    margin-bottom: 6rem;
+  }
+  #intro {
+    display: block; 
+    margin-bottom: 0rem;
   }
   .checkbtn {
     display: block;
