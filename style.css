@@ -312,7 +312,6 @@ section li {
   a:hover,
   a.active {
     background: none;
-    /* color: rgb(3, 201, 201); */
   }
   li > a:hover {
     background: none;
@@ -332,15 +331,9 @@ section li {
   }
   nav > ul li {
     display: block;
-    /* margin: 50px 0; */
     line-height: 1.8rem;
   }
   nav > ul li a {
     font-size: 0.9rem;
   }
-  /* a:hover,
-  a.active {
-    background: none;
-    color: rgb(3, 201, 201);
-  } */
 }
